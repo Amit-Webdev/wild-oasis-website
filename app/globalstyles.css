@@ -1,0 +1,16 @@
+.day-picker .rdp-months {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.day-picker .rdp-month {
+  margin: 0 10px; /* Adds some space between the months */
+}
+
+.rdp {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+}
