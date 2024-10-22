@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wild Oasis web-app
 
-## Getting Started
+**The Wild Oasis** is a hotel management web application designed for hotel employees to manage bookings, check-ins, and customer details. Built using React.js and Supabase for backend services, it offers a secure and seamless user experience.
 
-First, run the development server:
+## 🔗 Live Demo
+[View the live app](#)
 
+## 📂 Project Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+wild-oasis-website/
+├── components/        # Reusable UI components
+├── pages/             # Next.js pages
+│   ├── api/           # API routes
+│   ├── index.js       # Home page
+│   ├── profile.js     # User profile page
+│   └── ...            # Other pages
+├── public/            # Public assets and images
+├── styles/            # Global and component-specific styles
+├── utils/             # Utility functions and helpers
+├── .env.local         # Environment variables (not committed)
+├── next.config.js     # Next.js configuration
+├── package.json       # Project dependencies and scripts
+└── README.md          # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Frontend:
+Frontend: Next.js (React framework)
+Backend: Supabase (PostgreSQL, Authentication, Realtime database)
+Styling: Tailwind CSS
+State Management: React Context API
+Deployment: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Backend:
+- **Supabase**: Used for authentication, storage, and database functionalities.
+- **PostgreSQL**: The underlying database managed by Supabase for storing users, bookings, and related data.
 
-## Learn More
+### Deployment:
+- Hosted on **Vercel**, ensuring continuous deployment and fast load times.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **User Authentication**: Powered by Supabase, customers can securely log in or sign up.
+- **Booking Management**: Employees can add, view, and manage bookings with real-time updates.
+- **Check-In**: Quick and easy check-in functionality directly from the booking page.
+- **Responsive Design**: The app is fully responsive, built with Styled Components for a seamless experience across devices.
+- **Dark Mode**: Users can switch between light and dark themes using the dark mode toggle.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛡️ Security
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Supabase Auth** ensures only verified users can access the application. Passwords are securely stored and encrypted.
+- **Real-Time Data**: The app uses Supabase's real-time features to sync bookings data across devices.
+
+
